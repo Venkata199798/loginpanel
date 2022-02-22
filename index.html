@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Login Panel</h1>
+    <form action="./welcome.html" onsubmit="return subbmitt()"> 
+        <label for="Email">Email:</label>
+        <input type="email" placeholder="abc@gmail.com" onblur="email()" id="Email" />
+        <p id="error2"></p>
+        <label for="passwordset">Password: </label> 
+        <input type="password" placeholder="enter password" onblur="pass()" id="passwordset" />
+        <p id="error3"></p>
+        <input type="checkbox" id="check" onchange="check_mail_pass()" />Remember Me
+        <p id="error"></p>
+        <input type="submit" onclick="on_submiting()">
+    </form>
+    <script src="./index.js"></script>
+</body>
+
+</html>
